@@ -1,1 +1,1 @@
-# jClac
+# jCalc
