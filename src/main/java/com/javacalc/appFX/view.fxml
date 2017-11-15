@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.javacalc.appFX.controller.KeyController">
+   <children>
+      <GridPane layoutY="218.0" prefHeight="383.0" prefWidth="401.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" text="\%" />
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" text="√" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" text="x²" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" text="Button" GridPane.columnIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" text="CE" GridPane.rowIndex="1" />
+            <Button fx:id="keyClear" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" onAction="#clearExpression" prefHeight="80.0" prefWidth="120.0" text="C" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="delOneSimbol" mnemonicParsing="false" onAction="#delOneSimbol" prefHeight="80.0" prefWidth="120.0" text="🠴" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="keyMultiply" mnemonicParsing="false" onAction="#keyMultiply" prefHeight="80.0" prefWidth="120.0" text="×" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="keySeven" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="7" GridPane.rowIndex="2" />
+            <Button fx:id="keyEight" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="keyNine" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="keyDivide" mnemonicParsing="false" onAction="#keyDivide" prefHeight="80.0" prefWidth="120.0" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="keyFour" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="4" GridPane.rowIndex="3" />
+            <Button fx:id="keyFive" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="keySix" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" text="?" GridPane.rowIndex="5" />
+            <Button fx:id="keyPlus" mnemonicParsing="false" onAction="#keyPlus" prefHeight="80.0" prefWidth="120.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="keyMinus" mnemonicParsing="false" onAction="#keyMinus" prefHeight="80.0" prefWidth="120.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="keyThree" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="keyTwo" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="keyOne" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="1" GridPane.rowIndex="4" />
+            <Button fx:id="keyZero" mnemonicParsing="false" onAction="#onActionNumberKeys" prefHeight="80.0" prefWidth="120.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="120.0" text="()" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button fx:id="keyResult" layoutY="154.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="101.0" text="=" />
+      <Label fx:id="areaResult" layoutX="109.0" layoutY="154.0" prefHeight="64.0" prefWidth="292.0" text="Label" />
+      <TextArea fx:id="areaExpression" editable="true" layoutX="31.0" layoutY="48.0" prefHeight="100.0" prefWidth="345.0" />
+      <ToggleButton layoutX="6.0" layoutY="14.0" mnemonicParsing="false" text="ToggleButton" />
+   </children>
+</AnchorPane>
